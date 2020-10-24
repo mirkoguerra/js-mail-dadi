@@ -1,4 +1,18 @@
-
+document.getElementById("verifica").addEventListener("click", function(){
+  mailList = ["mirkoguerra@gmail.com", "alessandrosainato@gmail.com", "francescoelia@gmail.com", "flaviocordari@gmail.com"]; // array contenente le mail valide
+  mailToTest = document.getElementById("input").value; // variabile che prende la mail inserita dall'utente
+  var uscita = false; // variabile con valore booleano, finché è falsa il ciclo continua, ma quando c'è una corrispondenza fra mail inserita ed elenco mail, la faccio diventare vera, così blocco il ciclo
+  var i = 0;
+  while (i < mailList.length && !uscita){
+    if (mailToTest == mailList[i]){
+      document.getElementById("validOrNot").innerHTML = "Sei dei nostri";
+      uscita = true;
+    } else {
+      document.getElementById("validOrNot").innerHTML = "Non ti conosco";
+    }
+    i++;
+  }
+});
 
 document.getElementById("gioca").addEventListener("click", function(){
   function getRndInteger(min, max) {

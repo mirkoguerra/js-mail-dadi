@@ -30,6 +30,20 @@ section.zona-mail {
   background-image: url("../img/sfondo-mail.jpg");
   color: black;
 }
+section.zona-mail .center {
+  text-align: center;
+}
+section.zona-mail input, section.zona-mail button {
+  font-size: 20px;
+  padding: 5px;
+}
+section.zona-mail button {
+  background-color: lightblue;
+  margin: 10px 0;
+}
+section.zona-mail p {
+  font-size: 28px;
+}
 /* ZONA DADI */
 section.zona-dadi {
   background-image: url("../img/sfondo-dadi.jpg");
