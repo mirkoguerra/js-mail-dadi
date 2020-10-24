@@ -1,0 +1,76 @@
+/* INIZIALIZZAZIONE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* HELPER */
+.border {
+  border: 1px solid purple;
+}
+.rel {
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* GENERALE */
+section {
+  width: 100vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* ZONA MAIL */
+section.zona-mail {
+  background-image: url("../img/sfondo-mail.jpg");
+  color: black;
+}
+/* ZONA DADI */
+section.zona-dadi {
+  background-image: url("../img/sfondo-dadi.jpg");
+  color: white;
+}
+section.zona-dadi .container {
+  width: 60%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.zona-dadi .container .row {
+  width: 100%;
+  height: 16vh;
+}
+section.zona-dadi .container .row.button-container {
+  text-align: center;
+}
+section.zona-dadi .container .row.button-container h1 {
+  font-size: 20px;
+  margin-top: 3vh;
+}
+section.zona-dadi .container .row.button-container button {
+  font-size: 16px;
+  margin-top: 1vh;
+  padding: 5px;
+  background-color: lightgreen;
+}
+section.zona-dadi .container .row.fight-container p {
+  font-size: 20px;
+}
+section.zona-dadi .container .row.fight-container p:first-child {
+  margin-bottom: 1vh;
+}
+section.zona-dadi .container .row.result-container span {
+  font-size: 20px;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 500px) {
+  section.zona-dadi .container .row.button-container h1, section.zona-dadi .container .row.fight-container p, section.zona-dadi .container .row.result-container span {
+    font-size: 16px;
+  }
+}
